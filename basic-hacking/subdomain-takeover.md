@@ -8,7 +8,7 @@ description: >-
 
 ## <mark style="color:yellow;">Subdomain Takeover</mark>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Occurs when a subdomain is pointing to another domain (CNAME) that no longer exists.
 
@@ -20,7 +20,7 @@ A bunch of examples and walkthroughs on exploiting different providers:
 
 ## <mark style="color:yellow;">GitHub Takeover</mark>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 After we have an indicator that this site is vulnerable we need to get the GitHub page the vulnerable subdomain is pointing to. We need this information so we can register the domain through github.
 
@@ -41,11 +41,11 @@ SWAP Tabs
 {% endtab %}
 
 {% tab title="1" %}
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="3" %}
