@@ -4,7 +4,7 @@ description: Insecure Direct Object Reference
 
 # IDOR
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>IDOR</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>IDOR</p></figcaption></figure>
 
 #### Occurs when a user can view unauthorized data:
 
