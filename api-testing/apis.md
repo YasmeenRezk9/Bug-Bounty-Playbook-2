@@ -14,7 +14,7 @@ description: There are several types of APIs, and they are each slightly differe
 * The application is issuing a PUT request.
 * The HTTP response contains a MIME type of JSON.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>REST API</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>REST API</p></figcaption></figure>
 
 #### Cons
 
@@ -34,7 +34,7 @@ Fairly basic, each HTTP request maps to a particular function.
 * the request body contains two tags called “methodCall” and “methodName”.
 * The request only uses two, GET and POST methods.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## <mark style="color:yellow;">Simple Object Access Protocol (SOAP)</mark>
 

@@ -6,7 +6,7 @@ If an application uses user-supplied input to interact with files on the system 
 
 ### Source Code Snippet
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### &#x20;Exploitation
 
