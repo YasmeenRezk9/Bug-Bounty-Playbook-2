@@ -6,7 +6,7 @@ Web cache poisoning is a technique attackers use to force caching servers to ser
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Steps
+### Exploitation
 
 * Find an unkeyed value -> using the param miner plugin
 * Try to exploit the unkeyed value in some way -> (self xss)
