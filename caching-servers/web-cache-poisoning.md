@@ -13,11 +13,15 @@ Web cache poisoning is a technique attackers use to force caching servers to ser
 * Try to make the server cache the malicious HTTP response
 * See if our exploit worked -> Looking at the HTTP response headers
 
-#### Indicators
+#### Determining if a page has been cached In a request
 
-* The “X-cache” header is set to “miss” and the “Age” header is set to 0.
-* Path.
-* Adding a random GET parameter to the request should cause the response to be cached.
+In request:
+
+* Path: changing the GET parameter value causes the response to be cached by the server.
+
+In response:
+
+* The “X-cache” header is set to “miss” and the “Age” header is set to 0
 
 #### Response Headers
 
