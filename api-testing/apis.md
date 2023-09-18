@@ -14,7 +14,7 @@ description: There are several types of APIs, and they are each slightly differe
 * The application is issuing a PUT request.
 * The HTTP response contains a MIME type of JSON.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>REST API</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>REST API</p></figcaption></figure>
 
 #### Cons
 

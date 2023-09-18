@@ -12,7 +12,7 @@ Forcing the application to redirect to an attacker-controlled site.
 
 EX: redirecting to Google, if it does then the application is <mark style="color:red;">vulnerable</mark>.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Open Redirect</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Open Redirect</p></figcaption></figure>
 
 ### &#x20;Impact
 
