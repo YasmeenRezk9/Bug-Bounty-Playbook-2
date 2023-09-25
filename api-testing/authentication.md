@@ -19,3 +19,42 @@ The authorization header is just a base64 encoded string of the username and pas
 
 An attacker may change authentication information to gain ATO.
 
+## Json Web Token (JWT)
+
+💡Popular among API endpoints.
+
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+User attempts to login -> system sends credentials to the back end API -> backend verifies the credentials and if they are correct -> generates a JWT token sent to the user proving identity.
+
+#### Consists of three parts separated by dots:&#x20;
+
+1. Header -> specifies the algorithm used to generate the signature.
+2. Payload -> used for access control.
+3. Signature -> makes sure the token has not been modified or tampered with.
+
+#### EX
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+### None Algorithm
+
+Any JWT token will be valid as long as the signature is missing.
+
+💡Done manually or you can use a Burp plugin called “Json Web Token Attacker”.
+
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+### Brute Force Secret Key
+
+JWT tokens will either use an HMAC or RSA algorithm to verify the signature.
+
+#### To crack these keys:
+
+* [https://github.com/AresS31/jwtcat](https://github.com/AresS31/jwtcat)
+* [https://github.com/lmammino/jwt-cracker](https://github.com/lmammino/jwt-cracker)
+* [https://github.com/mazen160/jwt-pwn](https://github.com/mazen160/jwt-pwn)
+* [https://github.com/brendan-rius/c-jwt-cracker](https://github.com/brendan-rius/c-jwt-cracker)
+* GitHub Dorking: “jwt cracker”
+
+#### RSA to HMAC
