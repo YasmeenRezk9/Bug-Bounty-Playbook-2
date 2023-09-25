@@ -11,11 +11,11 @@ description: >-
 
 Each time you send a request your clear text username and password are sent as a base64 encoded authentication header making it very susceptible to eavesdropping attacks.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The authorization header is just a base64 encoded string of the username and password:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 An attacker may change authentication information to gain ATO.
 
@@ -84,4 +84,9 @@ several related, yet independent, software systems.
 
 Login to target website AKA service provider (SP) -> forwarded to the SSO website -> credentials will be sent to the ID -> ID checks the supplied credentials against a database if there is a match ✅ -> forwarded back to the SP with our SAML assertion that contains our identity.
 
-#### SAML Assertion&#x20;
+#### Original SAML Response
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### XML Signature Removal
+
