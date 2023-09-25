@@ -105,3 +105,6 @@ This would allow an attacker to supply another user's email giving them full acc
 ### XMLComment Injection
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+When it is passed to the service provider the comment will be stripped out giving the email “ user@user.com.evil.com ”, we will then be logged in as that user.
+
