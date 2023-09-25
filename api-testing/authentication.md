@@ -90,3 +90,14 @@ Login to target website AKA service provider (SP) -> forwarded to the SSO websit
 
 #### XML Signature Removal
 
+On some systems, it is possible to bypass this verification by removing the signature value or the entire signature tag from the assertion or message.
+
+1. Removing the signature value:
+
+* Try to make the “SignatureValue” data blank so it looks like "\<ds:SignatureValue>\</SignatureValue>"
+
+2. Completely remove the signature tags from the request:
+
+* using the SAML Raider plugin in Burp -> clicking the “Remove SIgnatures” button
+
+This would allow an attacker to supply another user's email giving them full access to their account.
