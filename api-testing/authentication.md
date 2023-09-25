@@ -88,7 +88,7 @@ Login to target website AKA service provider (SP) -> forwarded to the SSO websit
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### XML Signature Removal
+### XML Signature Removal
 
 On some systems, it is possible to bypass this verification by removing the signature value or the entire signature tag from the assertion or message.
 
@@ -101,3 +101,7 @@ On some systems, it is possible to bypass this verification by removing the sign
 * using the SAML Raider plugin in Burp -> clicking the “Remove SIgnatures” button
 
 This would allow an attacker to supply another user's email giving them full access to their account.
+
+### XMLComment Injection
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
