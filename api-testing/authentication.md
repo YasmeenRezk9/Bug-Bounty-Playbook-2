@@ -33,6 +33,12 @@ User attempts to login -> system sends credentials to the back end API -> backen
 2. Payload -> used for access control.
 3. Signature -> makes sure the token has not been modified or tampered with.
 
+#### Signature methods to sign a JWT token:
+
+1. None
+2. HMAC
+3. RSA
+
 #### EX
 
 <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
@@ -58,3 +64,24 @@ JWT tokens will either use an HMAC or RSA algorithm to verify the signature.
 * GitHub Dorking: “jwt cracker”
 
 #### RSA to HMAC
+
+**RSA** uses a private key to generate the signature and a public key for verifying the signature.
+
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>RSA</p></figcaption></figure>
+
+**HMAC** uses the same key for generating and verifying the signature.
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>HMAC</p></figcaption></figure>
+
+## <mark style="color:yellow;">Security Assertion Markup Language (SAML)</mark>&#x20;
+
+An authentication scheme that allows a user to log in with a single ID and password to any of\
+several related, yet independent, software systems.
+
+* the goal of SSO is to use one set of credentials across multiple websites.
+
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+Login to target website AKA service provider (SP) -> forwarded to the SSO website -> credentials will be sent to the ID -> ID checks the supplied credentials against a database if there is a match ✅ -> forwarded back to the SP with our SAML assertion that contains our identity.
+
+#### SAML Assertion&#x20;
