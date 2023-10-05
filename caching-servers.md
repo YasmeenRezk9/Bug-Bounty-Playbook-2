@@ -12,7 +12,7 @@ The caching server determines if two requests are identical using the **cache ke
 
 #### Example
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * “user 1” requests the “example.com/kop?somthing=ok” -> response not found in the caching server -> forwarded to the web server answering the response.
 * users 2 and 3 make the same request -> response found in the caching server -> web server not contacted -> old response shown instead.
