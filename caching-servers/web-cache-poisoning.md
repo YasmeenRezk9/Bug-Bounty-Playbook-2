@@ -4,7 +4,7 @@ Web cache poisoning is a technique attackers use to force caching servers to ser
 
 * By web cache poisoning, self XSS can be turned into stored XSS.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Exploitation
 
