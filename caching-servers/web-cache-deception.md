@@ -31,7 +31,7 @@ All about the web server interpreting a request one way while the caching server
 
 * occurs when an application loads the same resources no matter what the path is.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As we can see above, any path after “/” will essentially be passed to the same function giving the same results.
 * EX: both the “example.com” and “example.com/something'' URLs would be sent to the same catch\_all function.

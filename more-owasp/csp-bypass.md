@@ -58,7 +58,7 @@ XSS payload:
 
 * test.com?vuln\_param=https://accounts.google.com/o/oauth2/revoke<mark style="color:green;">?callback=alert(1)</mark>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>alert function being displayed on the page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>alert function being displayed on the page</p></figcaption></figure>
 
 #### 3. CSP Injection Bypass
 

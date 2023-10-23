@@ -9,7 +9,7 @@ description: No limit to what you can potentially do with this vulnerability.
 * JS objects inherit features from one another using Prototypes meaning if the prototype object is modified in one object it will apply to every other object.
 * Prototypes are used to overwrite functions, variables, and anything else.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Prototype Figure</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Prototype Figure</p></figcaption></figure>
 
 ### Exploitation
 

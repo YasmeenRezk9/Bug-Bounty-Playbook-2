@@ -20,7 +20,7 @@ A bunch of examples and walkthroughs on exploiting different providers:
 
 ## <mark style="color:yellow;">GitHub Takeover</mark>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After we have an indicator that this site is vulnerable we need to get the GitHub page the vulnerable subdomain is pointing to. We need this information so we can register the domain through github.
 

@@ -37,7 +37,7 @@ If you find server-side template injection in the Jinja 2 template engine the se
 
 **Vulnerable code snippet:**
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Method Resolution Order (MRO):** is the order in which Python looks for a method in a hierarchy of classes.
 
@@ -117,7 +117,7 @@ The most popular template engine for Java.
 
 **Vulnerable code snippet:**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **SSTI testing payloads:**
 

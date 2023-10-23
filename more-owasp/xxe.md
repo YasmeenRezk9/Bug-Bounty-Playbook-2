@@ -18,7 +18,7 @@ A language designed to store and transport data similar to JSON.
 
 **External Entity:** loads its data from an external source such as url or a file on disk.
 
-* 💡Note: in order to read the data the entity must be returned in the response.
+* 💡Note: to read the data the entity must be returned in the response.
 * EX: \<!DOCTYPE foo\[ \<!ENTITY ext SYSTEM "file:///path/to/file" > ]>
 
 ### <mark style="color:yellow;">XML External Entity(XXE) Attack</mark>

@@ -32,7 +32,7 @@ By default, the scope object contains another object called “constructor” wh
 
 * used to dynamically generate and execute code.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="color:yellow;">CSTI</mark>
 
@@ -60,6 +60,6 @@ Inject an Angular expression payload:
 
 * \{{constructor.constructor('alert(1)')()\}}
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The page causes the application to dynamically generate and execute our payload!
