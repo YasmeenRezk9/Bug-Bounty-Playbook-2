@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Basic Hacking](README.md)
+* [Introduction](README.md)
+* [Basic Hacking](<README (1).md>)
   * [Known Vulnerabilities](basic-hacking/known-vulnerabilities.md)
   * [CMS](basic-hacking/cms.md)
   * [Github](basic-hacking/github.md)
